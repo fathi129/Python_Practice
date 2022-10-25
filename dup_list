@@ -1,0 +1,37 @@
+# list_a = [1,2,23,4,5,5,45,2]
+# def remove_dup(list_a):
+#     y = set(list_a) 
+#     return [z for z in y]
+    
+# b = remove_dup(list_a)
+# print(b)
+
+
+# def some_func():
+#     print("inside some_func function")
+#     def some_inner():
+#         var = 10
+#         print("Inside some_inner function",var)
+    
+#         print("Try printing var from outer function: ",var)
+#     some_inner()    
+
+# some_func()
+
+class circle:
+    def area(self,r):
+        print("area of circle is",3.14*r*r)
+class square:
+    def area(self,r):
+        print("area of square is",r*r)
+class rectangle:
+    def area(self,r):
+        print("area of rectangle is",r*r)
+def func(obj):
+    obj.area(10)
+obj1 = circle()
+obj2 = square()
+obj3 = rectangle()
+func(obj1) 
+func(obj2)
+func(obj3)   
